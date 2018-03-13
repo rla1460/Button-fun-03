@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     var count = 0
     
+    @IBOutlet weak var OutLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,6 +23,7 @@ class ViewController: UIViewController {
         count = count + 1
         print("\(count) button pressed!!")
         
+        OutLabel.text = "\(count) button pressed!!"
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
